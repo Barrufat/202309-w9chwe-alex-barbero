@@ -19,7 +19,7 @@ const NormieCard = ({
         {" "}
         <img
           className="warrior__image"
-          src={images[2]}
+          src={images[0]}
           alt={name}
           height="200"
           width="200"
