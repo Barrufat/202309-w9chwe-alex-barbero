@@ -8,6 +8,11 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+  @font-face {
+    font-family: freshMarker;
+    src: url("src/fonts/freshmarker.ttf") format("woff");
+  }
+
 html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -39,6 +44,7 @@ h1,
 h2 {
   margin: 0;
   color: #ffffff;
+  font-family: freshMarker;
 }
 
 button {

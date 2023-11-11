@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
 export const NormieCardStyled = styled.article`
-  @font-face {
-    font-family: freshMarker;
-    src: url("src/fonts/freshmarker.ttf") format("truetype");
-  }
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +20,6 @@ export const NormieCardStyled = styled.article`
 
     &-title {
       z-index: 2;
-      font-family: freshMarker;
       font-size: 40px;
       color: #b40000;
     }
