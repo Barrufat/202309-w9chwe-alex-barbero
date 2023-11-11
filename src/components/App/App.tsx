@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+
 import Navigation from "../Navigation/Navigation";
 import getImage from "../getImage/getImage";
 import { BackgroundStyled, AppStyled } from "./AppStyled";

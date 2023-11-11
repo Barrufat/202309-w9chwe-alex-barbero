@@ -27,7 +27,7 @@ export const NormieCardStyled = styled.article`
       z-index: 2;
       font-family: freshMarker;
       font-size: 40px;
-      color: black;
+      color: #b40000;
     }
 
     &__image {

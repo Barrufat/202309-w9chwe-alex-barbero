@@ -1,7 +1,10 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { normiesReducer } from "./feature/normies/normiesSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    normiesState: normiesReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;
