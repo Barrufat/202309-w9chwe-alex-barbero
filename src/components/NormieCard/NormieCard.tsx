@@ -9,18 +9,27 @@ const NormieCard = ({
   normie: { age, description, images, isNormie, name, urbanTribe, isFriend },
 }: NormieCardProps) => {
   return (
-    <NormieCardStyled
-      className={`${isNormie ? "warrior-normie" : "warrior-darks"}${
-        isFriend ? "warrior-friend" : "warrior-enemy"
-      }`}
-    >
-      <img src={images[2]} alt={name} height="200" width="200" />
-      <h2>{name}</h2>
-      <div>
-        <span>{urbanTribe}</span>
-        <span>{age}</span>
+    <NormieCardStyled>
+      <h2 className="warrior-title">{name}</h2>
+      <div
+        className={`warrior warrior${isNormie ? "--normie" : "--darks"}${
+          isFriend ? "warrior--friend" : "warrior--enemy"
+        }`}
+      >
+        {" "}
+        <img
+          className="warrior__image"
+          src={images[2]}
+          alt={name}
+          height="200"
+          width="200"
+        />
+        <div className="warrior__data-box">
+          <span className="warrior__tribe">Tribe: {urbanTribe}</span>
+          <span className="warrior__age">Age: {age}</span>
+        </div>
+        <p>{description}</p>
       </div>
-      <p>{description}</p>
     </NormieCardStyled>
   );
 };

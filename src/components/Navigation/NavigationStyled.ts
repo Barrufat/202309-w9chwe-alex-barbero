@@ -5,7 +5,7 @@ const NavigationStyled = styled.nav`
   z-index: 2;
   top: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: 20px;
   width: 100%;
   height: 150px;
@@ -31,16 +31,21 @@ const NavigationStyled = styled.nav`
       z-index: 3;
       display: flex;
       gap: 20px;
-      padding-right: 30px;
     }
   }
 
   @media (min-width: 800px) {
+    justify-content: flex-end;
+
     .navigation {
       &__main-title {
         margin-top: 30px;
         width: 455px;
         height: 100px;
+      }
+
+      &__box {
+        padding-right: 30px;
       }
     }
   }

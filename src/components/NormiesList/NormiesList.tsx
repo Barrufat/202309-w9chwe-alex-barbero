@@ -10,7 +10,7 @@ const NormiesList = ({ normies }: NormiesListProps) => {
   return (
     <NormiesListStyled>
       {normies.map((normie) => (
-        <NormieCard normie={normie} />
+        <NormieCard key={normie.id} normie={normie} />
       ))}
     </NormiesListStyled>
   );
