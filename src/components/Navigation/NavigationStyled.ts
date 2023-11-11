@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const NavigationStyled = styled.nav`
   position: fixed;
+  z-index: 2;
   top: 0;
   display: flex;
   justify-content: space-between;
