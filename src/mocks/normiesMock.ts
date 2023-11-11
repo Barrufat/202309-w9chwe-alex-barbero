@@ -1,6 +1,6 @@
-import normieStructure from "../store/feature/normies/types";
+import NormieStructure from "../store/feature/normies/types";
 
-const normiesMock: normieStructure[] = [
+const normiesMock: NormieStructure[] = [
   {
     id: 1,
     name: "Anastasia Darks",

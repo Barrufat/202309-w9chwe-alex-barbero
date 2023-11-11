@@ -1,9 +1,9 @@
-import normieStructure from "../../store/feature/normies/types";
+import NormieStructure from "../../store/feature/normies/types";
 import NormieCard from "../NormieCard/NormieCard";
 import NormiesListStyled from "./NormiesListStyled";
 
 interface NormiesListProps {
-  normies: normieStructure[];
+  normies: NormieStructure[];
 }
 
 const NormiesList = ({ normies }: NormiesListProps) => {

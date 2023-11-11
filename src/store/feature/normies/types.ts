@@ -1,4 +1,4 @@
-interface normieStructure {
+interface NormieStructure {
   id: number;
   name: string;
   urbanTribe: string;
@@ -9,4 +9,4 @@ interface normieStructure {
   isFriend?: boolean;
 }
 
-export default normieStructure;
+export default NormieStructure;
