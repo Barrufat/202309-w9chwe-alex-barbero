@@ -6,7 +6,7 @@ const AppStyled = styled.main<{ urlImg: string }>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 100px 30px;
   background-image: url(${(props) => props.urlImg});
   background-size: cover;
 `;
