@@ -1,5 +1,5 @@
 import normieStructure from "../../store/feature/normies/types";
-import { NormieBoxStyled, NormieCardStyled } from "./NormieCardStyled";
+import { NormieCardStyled } from "./NormieCardStyled";
 
 interface NormieCardProps {
   normie: normieStructure;
@@ -14,12 +14,13 @@ const NormieCard = ({
         isFriend ? "warrior-friend" : "warrior-enemy"
       }`}
     >
+      <img src={images[1]} alt={name} height="200" width="200" />
       <h2>{name}</h2>
-      <NormieBoxStyled urlImg={images[0]}>
+      <div>
         <span>{urbanTribe}</span>
         <span>{age}</span>
-        <p>{description}</p>
-      </NormieBoxStyled>
+      </div>
+      <p>{description}</p>
     </NormieCardStyled>
   );
 };
