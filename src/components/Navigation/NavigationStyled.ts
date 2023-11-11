@@ -11,6 +11,10 @@ const NavigationStyled = styled.nav`
   height: 150px;
   background: linear-gradient(180deg, #666 20%, #666666f2 30%, #fff0 100%);
 
+  .active {
+    color: #fff;
+  }
+
   .navigation {
     &__title-box {
       width: 100%;
