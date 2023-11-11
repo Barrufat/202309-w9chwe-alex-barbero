@@ -4,8 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 
 describe("Given an App component", () => {
   describe("When rendered", () => {
-    test("It should show 'Take a look at the Born Warriors' in a heading", () => {
-      const expectedHeadingText = "Take a look at the Born Warriors";
+    test("It should show 'Anastasia Darks' in a heading", () => {
+      const expectedHeadingText = "Anastasia Darks";
       render(
         <BrowserRouter>
           <App />
