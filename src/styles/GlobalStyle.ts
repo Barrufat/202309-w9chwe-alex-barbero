@@ -10,7 +10,9 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: freshMarker;
-    src: url("src/fonts/freshmarker.ttf") format("woff");
+    src: 
+    local("freshMarker"),
+    url("./src/fonts/freshmarker.ttf") format("woff");
   }
 
 html {
