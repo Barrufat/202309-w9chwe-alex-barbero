@@ -14,7 +14,7 @@ const NormieCard = ({
         isFriend ? "warrior-friend" : "warrior-enemy"
       }`}
     >
-      <img src={images[1]} alt={name} height="200" width="200" />
+      <img src={images[2]} alt={name} height="200" width="200" />
       <h2>{name}</h2>
       <div>
         <span>{urbanTribe}</span>
