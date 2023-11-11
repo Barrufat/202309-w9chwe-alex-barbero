@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NormieCardStyled = styled.article`
   @font-face {
     font-family: freshMarker;
-    src: url("src/fonts/freshmarker.ttf");
+    src: url("src/fonts/freshmarker.ttf") format("truetype");
   }
 
   display: flex;
