@@ -9,6 +9,7 @@ import {
   killEnemyActionCreator,
   loveFriendActionCreator,
 } from "../../store/feature/normies/normiesSlice";
+import useNormiesApi from "../../hooks/useNormiesApi";
 
 interface NormieCardProps {
   normie: NormieStructure;
@@ -27,13 +28,18 @@ const NormieCard = ({
   },
 }: NormieCardProps) => {
   const dispatch = useDispatch();
+  const { updateNormieRelation } = useNormiesApi();
 
-  const loveNormie = (warriorId: number) => {
-    dispatch(loveFriendActionCreator(warriorId));
+  const loveNormie = () => {
+    const currentStatus = isFriend ? undefined : true;
+    updateNormieRelation(id, currentStatus);
+    dispatch(loveFriendActionCreator(id));
   };
 
-  const killNormie = (warriorId: number) => {
-    dispatch(killEnemyActionCreator(warriorId));
+  const killNormie = () => {
+    const currentStatus = isFriend === false ? undefined : false;
+    updateNormieRelation(id, currentStatus);
+    dispatch(killEnemyActionCreator(id));
   };
 
   return (
@@ -63,9 +69,7 @@ const NormieCard = ({
                   style={{ color: "#ffffff" }}
                 />
               }
-              actionOnClick={() => {
-                killNormie(id);
-              }}
+              actionOnClick={killNormie}
             />
             <Button
               type="button"
@@ -88,9 +92,7 @@ const NormieCard = ({
                   style={{ color: "#d10000" }}
                 />
               }
-              actionOnClick={() => {
-                loveNormie(id);
-              }}
+              actionOnClick={loveNormie}
             />
           </div>
         </div>
