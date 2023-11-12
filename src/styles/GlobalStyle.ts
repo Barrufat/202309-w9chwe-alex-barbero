@@ -42,6 +42,10 @@ a {
 button,
 input {
   font-family: inherit;
+  text-align: center;
+  padding: 10px;
+    border:none;
+  border-radius: 5px;
 }
 
 h1,
