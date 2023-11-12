@@ -89,7 +89,7 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
         checked={newNormie.isNormie}
         onChange={updateNewNormie}
       />
-      <Button type={"submit"} text={"Create new Film"} />
+      <Button type={"submit"} text={"Create new Normie"} />
     </NormiesFormStyled>
   );
 };
