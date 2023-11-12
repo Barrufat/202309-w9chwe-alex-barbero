@@ -110,6 +110,7 @@ const NormieCard = ({
             src={`./${isFriend ? "love" : "kill"}.png`}
             className={`warrior__modifier${isFriend ? "--friend" : "--enemy"}`}
             alt={`${isFriend ? "loved " : "hated "}${name}`}
+            title={`${isFriend ? "loved " : "hated "}${name}`}
           />
         )}
       </div>

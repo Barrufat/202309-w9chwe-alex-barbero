@@ -5,8 +5,8 @@ import customRender from "../../mocks/utils/customRender";
 
 describe("Given an App component", () => {
   describe("When rendered", () => {
-    test("It should show 'Anastasia Darks' in a heading", () => {
-      const expectedHeadingText = "Anastasia Darks";
+    test("It should show 'Morticia Darks' in a heading", () => {
+      const expectedHeadingText = "Morticia Darks";
 
       customRender(<App />);
 
