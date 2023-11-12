@@ -113,7 +113,7 @@ export const modifiedEnemyNormiesMock: NormieStructure[] = [
 
 export const newNormieMock: NormieStructure = {
   id: 4,
-  name: "Test",
+  name: "Perroflauta",
   urbanTribe: "Test",
   isNormie: false,
   description: "Test",
@@ -157,7 +157,7 @@ export const normiesAddedMock: NormieStructure[] = [
   },
   {
     id: 4,
-    name: "Test",
+    name: "Perroflauta",
     urbanTribe: "Test",
     isNormie: false,
     description: "Test",

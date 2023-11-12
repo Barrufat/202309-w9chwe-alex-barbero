@@ -35,9 +35,23 @@ const useNormiesApi = () => {
     [apiUrl],
   );
 
+  const addNewNormie = useCallback(
+    async (newNormie: NormieStructure): Promise<void> => {
+      await fetch(`${apiUrl}/normies`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newNormie),
+      });
+    },
+    [apiUrl],
+  );
+
   return {
     getNormies,
     updateNormieRelation,
+    addNewNormie,
   };
 };
 
