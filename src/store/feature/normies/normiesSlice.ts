@@ -48,6 +48,13 @@ const normiesSlice = createSlice({
             : normie.isFriend,
       })),
     }),
+    addNewNormie: (
+      currentState: NormiesStateStructure,
+      action: PayloadAction<NormieStructure>,
+    ): NormiesStateStructure => ({
+      ...currentState,
+      normies: [...currentState.normies, action.payload],
+    }),
   },
 });
 
@@ -55,6 +62,7 @@ export const {
   loadNormies: loadNormiesActionCreator,
   loveFriend: loveFriendActionCreator,
   killEnemy: killEnemyActionCreator,
+  addNewNormie: addNewNormieActionCreator,
 } = normiesSlice.actions;
 
 export const normiesReducer = normiesSlice.reducer;

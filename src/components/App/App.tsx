@@ -5,8 +5,20 @@ import getImage from "../getImage/getImage";
 import { BackgroundStyled, AppStyled } from "./AppStyled";
 import NormiesPage from "../../pages/NormiesPage/NormiesPage";
 import NormiesFormPage from "../../pages/NormiesFormPage/NormiesFormPage";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import useNormiesApi from "../../hooks/useNormiesApi";
+import { loadNormiesActionCreator } from "../../store/feature/normies/normiesSlice";
 
 const App = () => {
+  const { getNormies } = useNormiesApi();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    (async () => {
+      dispatch(loadNormiesActionCreator(await getNormies()));
+    })();
+  }, [dispatch, getNormies]);
   return (
     <>
       <Navigation />
