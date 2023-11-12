@@ -62,11 +62,13 @@ export const NormieCardStyled = styled.article`
     &__modifier--friend {
       position: absolute;
       right: 0;
+      z-index: 1;
     }
 
     &__modifier--enemy {
       position: absolute;
       left: 0;
+      z-index: 1;
     }
 
     &__data {

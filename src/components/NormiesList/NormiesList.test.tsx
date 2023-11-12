@@ -5,8 +5,8 @@ import customRender from "../../mocks/utils/customRender";
 
 describe("Given a NormiesList component", () => {
   describe("When it recieves a list of normies", () => {
-    test("it should show 'Anastasia Darks", () => {
-      const expectedHeadingTitle = "Anastasia Darks";
+    test("it should show 'Morticia Darks", () => {
+      const expectedHeadingTitle = "Morticia Darks";
       customRender(<NormiesList normies={normiesMock} />);
 
       const normieHeadingElement = screen.getByRole("heading", {

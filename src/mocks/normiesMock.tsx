@@ -3,7 +3,7 @@ import NormieStructure from "../store/feature/normies/types";
 export const normiesMock: NormieStructure[] = [
   {
     id: 1,
-    name: "Anastasia Darks",
+    name: "Morticia Darks",
     urbanTribe: "Metalhead",
     isNormie: false,
     description:
@@ -18,7 +18,7 @@ export const normiesMock: NormieStructure[] = [
   },
   {
     id: 2,
-    name: "Exasty Pete",
+    name: "Extasy Pete",
     urbanTribe: "Modern",
     isNormie: true,
     description:
@@ -51,7 +51,7 @@ export const normiesMock: NormieStructure[] = [
 export const modifiedFriendNormiesMock: NormieStructure[] = [
   {
     id: 1,
-    name: "Anastasia Darks",
+    name: "Morticia Darks",
     urbanTribe: "Metalhead",
     isNormie: false,
     description:
@@ -66,7 +66,7 @@ export const modifiedFriendNormiesMock: NormieStructure[] = [
   },
   {
     id: 2,
-    name: "Exasty Pete",
+    name: "Extasy Pete",
     urbanTribe: "Modern",
     isNormie: true,
     description:
@@ -97,7 +97,7 @@ export const modifiedFriendNormiesMock: NormieStructure[] = [
 export const modifiedEnemyNormiesMock: NormieStructure[] = [
   {
     id: 1,
-    name: "Anastasia Darks",
+    name: "Morticia Darks",
     urbanTribe: "Metalhead",
     isNormie: false,
     description:
@@ -111,7 +111,7 @@ export const modifiedEnemyNormiesMock: NormieStructure[] = [
   },
   {
     id: 2,
-    name: "Exasty Pete",
+    name: "Extasy Pete",
     urbanTribe: "Modern",
     isNormie: true,
     description:

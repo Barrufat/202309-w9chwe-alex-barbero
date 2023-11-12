@@ -11,8 +11,33 @@ const useNormiesApi = () => {
     return Normie;
   }, [apiUrl]);
 
+  const updateNormieRelation = useCallback(
+    async (
+      normieId: number,
+      normieState: boolean | undefined,
+    ): Promise<void> => {
+      try {
+        const response = await fetch(`${apiUrl}/normies/${normieId}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ isFriend: normieState }),
+        });
+
+        if (!response.ok) {
+          throw new Error();
+        }
+      } catch {
+        throw new Error();
+      }
+    },
+    [apiUrl],
+  );
+
   return {
     getNormies,
+    updateNormieRelation,
   };
 };
 
