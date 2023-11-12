@@ -9,7 +9,7 @@ const Navigation = () => {
           <NavLink to="/home">See All</NavLink>
         </li>
         <li>
-          <NavLink to="/">Add New</NavLink>
+          <NavLink to="/add">Add New</NavLink>
         </li>
       </ul>
       <div className="navigation__title-box">

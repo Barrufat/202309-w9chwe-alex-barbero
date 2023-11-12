@@ -2,6 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
+  @font-face {
+    font-family: freshMarker;
+    src: url("src/fonts/freshmarker.ttf") format("truetype");
+  }
+
 *,
 ::before,
 ::after {
@@ -43,10 +48,20 @@ h1,
 h2 {
   margin: 0;
   color: #ffffff;
+  font-family: freshMarker;
 }
 
 button {
   cursor: pointer;
+}
+
+.add-title{
+    padding: 20px;
+    background: radial-gradient(#303030 10%, #6660 70%);
+    margin-top: 40px;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
 }
 
 `;
