@@ -3,8 +3,8 @@ import ButtonStyled from "./ButtonStyled";
 interface ButtonProps {
   type: "button" | "submit";
   actionOnClick?: () => void;
-  text: string;
-  className: string;
+  text?: string | React.ReactElement;
+  className?: string;
 }
 
 const Button = ({
