@@ -4,6 +4,7 @@ import Navigation from "../Navigation/Navigation";
 import getImage from "../getImage/getImage";
 import { BackgroundStyled, AppStyled } from "./AppStyled";
 import NormiesPage from "../../pages/NormiesPage/NormiesPage";
+import NormiesFormPage from "../../pages/NormiesFormPage/NormiesFormPage";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<NormiesPage />} />
-          <Route path="/add" element={<Navigate to="/home" />} />
+          <Route path="/add" element={<NormiesFormPage />} />
         </Routes>
       </AppStyled>
     </>

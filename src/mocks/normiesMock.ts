@@ -25,7 +25,7 @@ export const normiesMock: NormieStructure[] = [
       "Just arrived from the Born neightbourhood in Bcn. Avocados and Brunch-Electronic are his passion, and he's always ready to yell at people on twitter while wearing his gafapastas. ",
     age: 33,
     images: [
-      "http://coloquialmente.com/sites/default/files/inline-images/gafapasta_0.jpg",
+      "https://coloquialmente.com/sites/default/files/inline-images/gafapasta_0.jpg",
       "https://th.bing.com/th/id/OIG.dwh2FsusQ5qJvDhaXUnZ?pid=ImgGn",
       "https://cdn.leonardo.ai/users/85d57301-957e-45b5-8213-e4df2524bcc1/generations/529d5967-cf13-49f4-9fa0-75eb56f6ca42/Leonardo_Diffusion_studio_ghibli_sketch_colorful_happy_arrogan_3.jpg",
     ],
@@ -73,7 +73,7 @@ export const modifiedFriendNormiesMock: NormieStructure[] = [
       "Just arrived from the Born neightbourhood in Bcn. Avocados and Brunch-Electronic are his passion, and he's always ready to yell at people on twitter while wearing his gafapastas. ",
     age: 33,
     images: [
-      "http://coloquialmente.com/sites/default/files/inline-images/gafapasta_0.jpg",
+      "https://coloquialmente.com/sites/default/files/inline-images/gafapasta_0.jpg",
       "https://th.bing.com/th/id/OIG.dwh2FsusQ5qJvDhaXUnZ?pid=ImgGn",
       "https://cdn.leonardo.ai/users/85d57301-957e-45b5-8213-e4df2524bcc1/generations/529d5967-cf13-49f4-9fa0-75eb56f6ca42/Leonardo_Diffusion_studio_ghibli_sketch_colorful_happy_arrogan_3.jpg",
     ],
@@ -118,7 +118,7 @@ export const modifiedEnemyNormiesMock: NormieStructure[] = [
       "Just arrived from the Born neightbourhood in Bcn. Avocados and Brunch-Electronic are his passion, and he's always ready to yell at people on twitter while wearing his gafapastas. ",
     age: 33,
     images: [
-      "http://coloquialmente.com/sites/default/files/inline-images/gafapasta_0.jpg",
+      "https://coloquialmente.com/sites/default/files/inline-images/gafapasta_0.jpg",
       "https://th.bing.com/th/id/OIG.dwh2FsusQ5qJvDhaXUnZ?pid=ImgGn",
       "https://cdn.leonardo.ai/users/85d57301-957e-45b5-8213-e4df2524bcc1/generations/529d5967-cf13-49f4-9fa0-75eb56f6ca42/Leonardo_Diffusion_studio_ghibli_sketch_colorful_happy_arrogan_3.jpg",
     ],
