@@ -16,16 +16,7 @@ interface NormieCardProps {
 }
 
 const NormieCard = ({
-  normie: {
-    id,
-    age,
-    description,
-    images,
-    isNormie,
-    name,
-    urbanTribe,
-    isFriend,
-  },
+  normie: { id, age, description, image, isNormie, name, urbanTribe, isFriend },
 }: NormieCardProps) => {
   const dispatch = useDispatch();
   const { updateNormieRelation } = useNormiesApi();
@@ -53,7 +44,7 @@ const NormieCard = ({
         <div className="warrior__image-box">
           <img
             className="warrior__image"
-            src={images[0]}
+            src={image}
             alt={name}
             height="200"
             width="200"

@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import NormiesFormStyled from "./NormiesFormStyled";
 
 interface FilmFormProps {
-  submitAction: () => void;
+  submitAction: (newNormie: NormieStructure) => void;
 }
 
 const FilmForm = ({ submitAction }: FilmFormProps) => {
@@ -14,12 +14,11 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
     age: 0,
     urbanTribe: "",
     description: "",
-    images: [],
+    image: "",
     isNormie: false,
   };
 
   const [newNormie, setNewNormie] = useState<NormieStructure>(initialFilm);
-  const [newImage, setNewImage] = useState<string>("");
 
   const updateNewNormie = (
     event:
@@ -33,28 +32,19 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
           ? !currentNewNormie.isNormie
           : event.target.value,
     }));
-
-    console.log(newNormie);
-  };
-  const updateNewImage = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setNewImage(event.target.value);
   };
 
   const onFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    setNewNormie((currentNewNormie) => ({
-      ...currentNewNormie,
-      images: [...currentNewNormie.images, newImage],
-    }));
-
-    submitAction();
+    submitAction(newNormie);
   };
 
   return (
     <NormiesFormStyled onSubmit={onFormSubmit}>
       <label htmlFor="name">Name: </label>
       <input
+        required
         type="text"
         id="name"
         value={newNormie.name}
@@ -62,6 +52,7 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
       />
       <label htmlFor="age">Age: </label>
       <input
+        required
         type="number"
         id="age"
         value={newNormie.age}
@@ -69,6 +60,7 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
       />
       <label htmlFor="urbanTribe">Urban Tribe: </label>
       <input
+        required
         type="text"
         id="urbanTribe"
         value={newNormie.urbanTribe}
@@ -76,12 +68,18 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
       />
       <label htmlFor="description">Description: </label>
       <textarea
+        required
         id="description"
         value={newNormie.description}
         onChange={updateNewNormie}
       />
       <label htmlFor="image">Image url: </label>
-      <input type="url" id="image" value={newImage} onChange={updateNewImage} />
+      <input
+        type="url"
+        id="image"
+        value={newNormie.image}
+        onChange={updateNewNormie}
+      />
       <label htmlFor="isNormie">Is a normie? </label>
       <input
         type="checkbox"

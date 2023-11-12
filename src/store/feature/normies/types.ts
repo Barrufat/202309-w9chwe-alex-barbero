@@ -5,7 +5,7 @@ interface NormieStructure {
   isNormie: boolean;
   description: string;
   age: number;
-  images: string[];
+  image: string;
   isFriend?: boolean;
 }
 
