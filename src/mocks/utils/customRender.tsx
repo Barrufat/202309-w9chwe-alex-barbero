@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { normiesReducer } from "../../store/feature/normies/normiesSlice";
-import normiesMock from "../normiesMock";
+import { normiesMock } from "../normiesMock";
 
 const customRender = (children: React.ReactElement) => {
   const mockStore = configureStore({

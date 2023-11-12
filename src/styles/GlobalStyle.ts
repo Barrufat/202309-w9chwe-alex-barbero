@@ -18,6 +18,10 @@ body {
   background-color: #ffffff;
 }
 
+p{
+  margin:0;
+}
+
 ul,
 li {
   margin: 0;
