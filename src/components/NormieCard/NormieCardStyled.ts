@@ -16,9 +16,11 @@ export const NormieCardStyled = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    position: relative;
     width: 250px;
     color: white;
-    background-color: #838383a3;
+    background-color: #272727d6;
     box-shadow: 10px 10px 10px #0005;
     padding: 25px;
     border-radius: 15px;
@@ -26,24 +28,51 @@ export const NormieCardStyled = styled.article`
     &-title {
       z-index: 2;
       font-family: freshMarker;
+      font-weight: 100;
       font-size: 40px;
       color: #b40000;
     }
 
+    &__image-box {
+      display: flex;
+    }
+
+    &__control-box {
+      z-index: 2;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      gap: 10px;
+      margin-left: -10px;
+      justify-content: space-evenly;
+    }
+
     &__image {
-      border-radius: 20px;
+      border-radius: 10px;
     }
 
     &__data-box {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      gap: 5px;
     }
 
-    &__tribe {
+    &__modifier--friend {
+      position: absolute;
+      right: 0;
     }
 
-    &__age {
+    &__modifier--enemy {
+      position: absolute;
+      left: 0;
+    }
+
+    &__data {
+      font-family: freshMarker;
+      font-weight: 100;
+      font-size: 20px;
     }
   }
 `;
