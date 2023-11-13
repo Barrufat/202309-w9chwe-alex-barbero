@@ -7,6 +7,12 @@ interface NormiesStateStructure {
 
 const initialState: NormiesStateStructure = { normies: [] };
 
+const setIsFriend = (normieIsFriend: boolean | undefined) =>
+  normieIsFriend ? undefined : true;
+
+const setIsEnemy = (normieIsFriend: boolean | undefined) =>
+  normieIsFriend === false ? undefined : false;
+
 const normiesSlice = createSlice({
   name: "normies",
   initialState: initialState,
@@ -27,9 +33,7 @@ const normiesSlice = createSlice({
         ...normie,
         isFriend:
           normie.id === action.payload
-            ? normie.isFriend
-              ? undefined
-              : true
+            ? setIsFriend(normie.isFriend)
             : normie.isFriend,
       })),
     }),
@@ -42,9 +46,7 @@ const normiesSlice = createSlice({
         ...normie,
         isFriend:
           normie.id === action.payload
-            ? normie.isFriend === false
-              ? undefined
-              : false
+            ? setIsEnemy(normie.isFriend)
             : normie.isFriend,
       })),
     }),

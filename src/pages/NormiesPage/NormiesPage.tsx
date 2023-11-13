@@ -4,11 +4,7 @@ import { useAppSelector } from "../../store/hooks";
 const NormiesPage = () => {
   const warriors = useAppSelector((state) => state.normiesState.normies);
 
-  return (
-    <>
-      <NormiesList normies={warriors} />
-    </>
-  );
+  return <NormiesList normies={warriors} />;
 };
 
 export default NormiesPage;
