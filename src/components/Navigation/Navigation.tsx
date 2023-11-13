@@ -15,8 +15,8 @@ const Navigation = () => {
       <div className="navigation__title-box">
         <img
           className="navigation__main-title"
-          src="https://fontmeme.com/permalink/231111/59dabfafcbb251b060f8fb0499db4dde.png"
-          alt="graffiti-creator"
+          src="./main-title.png"
+          alt="normie-wars"
         />
       </div>
     </NavigationStyled>
