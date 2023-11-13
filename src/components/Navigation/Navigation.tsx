@@ -15,7 +15,7 @@ const Navigation = () => {
       <div className="navigation__title-box">
         <img
           className="navigation__main-title"
-          src="./main-title.png"
+          src="./main-title.webp"
           alt="normie-wars"
         />
       </div>
