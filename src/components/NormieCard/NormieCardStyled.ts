@@ -50,6 +50,8 @@ export const NormieCardStyled = styled.article`
 
     &__image {
       border-radius: 10px;
+      width: 200px;
+      height: 200px;
     }
 
     &__data-box {

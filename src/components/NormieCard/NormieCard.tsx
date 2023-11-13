@@ -46,8 +46,8 @@ const NormieCard = ({
             className="warrior__image"
             src={image}
             alt={name}
-            height="200"
-            width="200"
+            height="512"
+            width="512"
           />
           <div className="warrior__control-box">
             <Button
