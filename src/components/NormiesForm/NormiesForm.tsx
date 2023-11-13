@@ -42,7 +42,9 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
 
   return (
     <NormiesFormStyled onSubmit={onFormSubmit}>
-      <label htmlFor="name">Name: </label>
+      <label className="form__label" htmlFor="name">
+        Name:
+      </label>
       <input
         required
         type="text"
@@ -50,7 +52,9 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
         value={newNormie.name}
         onChange={updateNewNormie}
       />
-      <label htmlFor="age">Age: </label>
+      <label className="form__label" htmlFor="age">
+        Age:
+      </label>
       <input
         required
         type="number"
@@ -58,7 +62,9 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
         value={newNormie.age}
         onChange={updateNewNormie}
       />
-      <label htmlFor="urbanTribe">Urban Tribe: </label>
+      <label className="form__label" htmlFor="urbanTribe">
+        Urban Tribe:
+      </label>
       <input
         required
         type="text"
@@ -66,28 +72,39 @@ const FilmForm = ({ submitAction }: FilmFormProps) => {
         value={newNormie.urbanTribe}
         onChange={updateNewNormie}
       />
-      <label htmlFor="description">Description: </label>
+      <label className="form__label" htmlFor="description">
+        Description:
+      </label>
       <textarea
+        className="form__description"
         required
         id="description"
         value={newNormie.description}
         onChange={updateNewNormie}
       />
-      <label htmlFor="image">Image url: </label>
+      <label className="form__label" htmlFor="image">
+        Image url:
+      </label>
       <input
         type="url"
         id="image"
         value={newNormie.image}
         onChange={updateNewNormie}
       />
-      <label htmlFor="isNormie">Is a normie? </label>
+      <label className="form__label" htmlFor="isNormie">
+        Is a normie?
+      </label>
       <input
         type="checkbox"
         id="isNormie"
         checked={newNormie.isNormie}
         onChange={updateNewNormie}
       />
-      <Button type={"submit"} text={"Create new Normie"} />
+      <Button
+        className={"button--create-new"}
+        type={"submit"}
+        text={"Create new Normie"}
+      />
     </NormiesFormStyled>
   );
 };

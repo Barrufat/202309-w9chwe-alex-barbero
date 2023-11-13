@@ -28,7 +28,7 @@ const NavigationStyled = styled.nav`
     &__main-title {
       margin-top: 30px;
       width: 255px;
-      height: 80px;
+      height: 56px;
     }
 
     &__box {

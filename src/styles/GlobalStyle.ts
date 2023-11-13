@@ -44,8 +44,14 @@ input {
   font-family: inherit;
   text-align: center;
   padding: 10px;
-    border:none;
+  border:none;
   border-radius: 5px;
+}
+
+input[type="checkbox"]{
+  width: 30px;
+  height:30px;
+  accent-color:black;
 }
 
 h1,
@@ -59,13 +65,29 @@ button {
   cursor: pointer;
 }
 
+.button{
+  &--create-new {
+  font-size: 20px;
+  font-family: freshMarker;
+  background: #fff;
+  &:hover{
+    opacity: 0.5;
+  }
+  }
+}
 .add-title{
     padding: 20px;
     background: radial-gradient(#303030 10%, #6660 70%);
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     font-weight: 100;
+}
+
+@media (min-width: 800px) {
+  .add-title{
+    font-size: 30px;
+  }
 }
 
 `;
