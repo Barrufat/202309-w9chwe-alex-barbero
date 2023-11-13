@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: freshMarker;
-    src: url("src/fonts/freshmarker.ttf") format("truetype");
+    src: url("./fonts/freshmarker.ttf") format("woff");
   }
 
 *,
